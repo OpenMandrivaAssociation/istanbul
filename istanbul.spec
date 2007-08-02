@@ -30,7 +30,7 @@ BuildRequires: desktop-file-utils
 BuildRequires: pygtk2.0-devel
 BuildRequires: gnome-python-extras
 BuildRequires: gstreamer0.10-plugins-good
-BuildRequires: gstreamer0.10-python
+BuildRequires: gstreamer0.10-python-devel
 BuildRequires: libgstreamer-plugins-base-devel
 BuildRequires: ImageMagick
 BuildRequires: automake1.8 intltool libGConf2-devel
