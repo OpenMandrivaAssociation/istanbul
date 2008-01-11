@@ -58,15 +58,6 @@ mv %buildroot%_prefix/lib/python* %buildroot%_libdir
 %endif
 rm -f %buildroot%{py_platsitedir}/istanbul/extern/pytrayicon/*.la
 
-mkdir -p %buildroot/%{_menudir}
-cat > %buildroot/%{_menudir}/%{name} << EOF
-?package(%{name}):command="%{_bindir}/%{name}" \
-          icon="%{name}.png" \
-          needs="x11" \
-          section="Multimedia/Video" \
-          title="Istanbul" \
-          longtitle="A desktop recorder and streamer" xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --add-category="GTK" \
@@ -98,7 +89,6 @@ rm -rf %buildroot
 %_mandir/man1/%name.1*
 %{_bindir}/%{name}
 %{py_platsitedir}/*
-%{_menudir}/%{name}
 %{_datadir}/pixmaps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 %_libdir/gstreamer-0.10/libistximagesrc.so*
