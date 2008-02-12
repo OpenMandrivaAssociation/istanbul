@@ -39,7 +39,7 @@ BuildRequires: python-xlib gnome-python-gconf
 
 %description
 Istanbul is a desktop session recorder.  You can use it to record your desktop 
-session and then play it back for demos, tutorials and presentations.  Sessions 
+session and then play it back for demos, tutorials and presentations.  Sessions
 are recorded to ogg theora files for later playback.
 
 %prep
