@@ -96,14 +96,18 @@ rm -rf %buildroot
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
 %post_install_gconf_schemas %name
+%endif
 
 %preun
 %preun_uninstall_gconf_schemas %name
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
+%endif
 
 
