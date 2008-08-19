@@ -3,7 +3,7 @@
 %endif
 %define    name istanbul
 %define    version 0.2.2
-%define    release %mkrel 4
+%define    release %mkrel 5
 %define    summary  Desktop Session Recorder
 
 Summary:   %summary
@@ -14,6 +14,7 @@ License:   GPL
 Group:     Video
 URL:       http://live.gnome.org/Istanbul 
 Source:    http://zaheer.merali.org/istanbul-%{version}.tar.bz2
+Patch: istanbul-fix-recording-with-sound.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:  pygtk2.0 pygtk2.0-libglade
 Requires: python-xlib
@@ -44,6 +45,7 @@ are recorded to ogg theora files for later playback.
 
 %prep
 %setup -q
+%patch -p0
 
 %build
 %configure2_5x
