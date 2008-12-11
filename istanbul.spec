@@ -33,7 +33,7 @@ BuildRequires: gnome-python-extras
 BuildRequires: gstreamer0.10-plugins-good
 BuildRequires: gstreamer0.10-python-devel
 BuildRequires: libgstreamer-plugins-base-devel
-BuildRequires: ImageMagick
+BuildRequires: imagemagick
 BuildRequires: automake1.8 intltool libGConf2-devel
 BuildRequires: desktop-file-utils
 BuildRequires: python-xlib gnome-python-gconf
