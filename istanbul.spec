@@ -3,7 +3,7 @@
 %endif
 %define    name istanbul
 %define    version 0.2.2
-%define    release %mkrel 9
+%define release  10
 %define    summary  Desktop Session Recorder
 
 Summary:   %summary
@@ -15,7 +15,6 @@ Group:     Video
 URL:       http://live.gnome.org/Istanbul 
 Source:    http://zaheer.merali.org/istanbul-%{version}.tar.bz2
 Patch: istanbul-fix-recording-with-sound.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:  pygtk2.0 pygtk2.0-libglade
 Requires: python-xlib
 Requires: gnome-python-extras
