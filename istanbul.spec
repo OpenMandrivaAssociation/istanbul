@@ -33,7 +33,7 @@ BuildRequires: gstreamer0.10-plugins-good
 BuildRequires: gstreamer0.10-python-devel
 BuildRequires: pkgconfig(gstreamer-plugins-base-0.10)
 BuildRequires: imagemagick
-BuildRequires: automake1.8 intltool libGConf2-devel
+BuildRequires: automake1.8 intltool pkgconfig(gconf-2.0)
 BuildRequires: desktop-file-utils
 BuildRequires: python-xlib gnome-python-gconf
 
@@ -119,7 +119,7 @@ rm -rf %buildroot
 + Revision: 677818
 - rebuild to add gconftool as req
 
-* Wed Nov 03 2010 Götz Waschk <waschk@mandriva.org> 0.2.2-8mdv2011.0
+* Wed Nov 03 2010 GÃ¶tz Waschk <waschk@mandriva.org> 0.2.2-8mdv2011.0
 + Revision: 592940
 - rebuild for new python 2.7
 
@@ -127,14 +127,14 @@ rm -rf %buildroot
 + Revision: 437995
 - rebuild
 
-* Sun Dec 28 2008 Götz Waschk <waschk@mandriva.org> 0.2.2-6mdv2009.1
+* Sun Dec 28 2008 GÃ¶tz Waschk <waschk@mandriva.org> 0.2.2-6mdv2009.1
 + Revision: 320643
 - rebuild for new python
 
   + Oden Eriksson <oeriksson@mandriva.com>
     - lowercase ImageMagick
 
-* Tue Aug 19 2008 Götz Waschk <waschk@mandriva.org> 0.2.2-5mdv2009.0
+* Tue Aug 19 2008 GÃ¶tz Waschk <waschk@mandriva.org> 0.2.2-5mdv2009.0
 + Revision: 273863
 - add patch to fix bug #42922
 
@@ -154,11 +154,11 @@ rm -rf %buildroot
   + Olivier Blin <oblin@mandriva.com>
     - restore BuildRoot
 
-  + Götz Waschk <waschk@mandriva.org>
+  + GÃ¶tz Waschk <waschk@mandriva.org>
     - fix buildrequires
 
 
-* Tue Mar 20 2007 Götz Waschk <waschk@mandriva.org> 0.2.2-2mdv2007.1
+* Tue Mar 20 2007 GÃ¶tz Waschk <waschk@mandriva.org> 0.2.2-2mdv2007.1
 + Revision: 146952
 - update deps
 
@@ -166,42 +166,42 @@ rm -rf %buildroot
 + Revision: 126340
 - update to 0.2.2
 
-* Wed Nov 29 2006 Götz Waschk <waschk@mandriva.org> 0.2.1-6mdv2007.1
+* Wed Nov 29 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.2.1-6mdv2007.1
 + Revision: 88365
 - fix file list
 - unpack patch
 - rename patch
 - Import istanbul
 
-* Thu Oct 05 2006 G�tz Waschk <waschk@mandriva.org> 0.2.1-4mdv2007.0
+* Thu Oct 05 2006 Götz Waschk <waschk@mandriva.org> 0.2.1-4mdv2007.0
 - fix deps (bug #26309)
 
-* Thu Sep 14 2006 G�tz Waschk <waschk@mandriva.org> 0.2.1-3mdv2007.0
+* Thu Sep 14 2006 Götz Waschk <waschk@mandriva.org> 0.2.1-3mdv2007.0
 - fix a crash
 
-* Wed Aug 30 2006 G�tz Waschk <waschk@mandriva.org> 0.2.1-2mdv2007.0
+* Wed Aug 30 2006 Götz Waschk <waschk@mandriva.org> 0.2.1-2mdv2007.0
 - fix buildrequires
 
-* Sun Jul 30 2006 Götz Waschk <waschk@mandriva.org> 0.2.1-1mdv2007.0
+* Sun Jul 30 2006 GÃ¶tz Waschk <waschk@mandriva.org> 0.2.1-1mdv2007.0
 - New release 0.2.1
 
-* Mon Jul 17 2006 G�tz Waschk <waschk@mandriva.org> 0.2.0-1mdv2007.0
+* Mon Jul 17 2006 Götz Waschk <waschk@mandriva.org> 0.2.0-1mdv2007.0
 - fix deps
 - update file list
 - drop patch
 - New release 0.2.0
 
-* Tue Jul 11 2006 G�tz Waschk <waschk@mandriva.org> 0.1.2-2mdv2007.0
+* Tue Jul 11 2006 Götz Waschk <waschk@mandriva.org> 0.1.2-2mdv2007.0
 - fix buildrequires
 
-* Mon Jun 19 2006 G�tz Waschk <waschk@mandriva.org> 0.1.2-1mdv2007.0
+* Mon Jun 19 2006 Götz Waschk <waschk@mandriva.org> 0.1.2-1mdv2007.0
 - add xdg menu
 - update file list
 - drop patch 0
 - fix deps
 - New release 0.1.2
 
-* Wed Apr 26 2006 Nicolas L�cureuil <neoclust@mandriva.org> 0.1.1-11mdk
+* Wed Apr 26 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.1.1-11mdk
 - Fix Build for mdv <= 2006.0
 
 * Tue Apr 04 2006 Sebastien Savarin <plouf@mandriva.org> 0.1.1-10mdk
@@ -209,26 +209,26 @@ rm -rf %buildroot
 - use macros
 - make specfile "reader friendly"
 
-* Tue Mar 14 2006 G�tz Waschk <waschk@mandriva.org> 0.1.1-9mdk
+* Tue Mar 14 2006 Götz Waschk <waschk@mandriva.org> 0.1.1-9mdk
 - install in the right dir on x86_64
 
 * Fri Feb 10 2006 Michael Scherer <misc@mandriva.org> 0.1.1-8mdk
 - patch 1, stolen from debian, fix the problem regarding icon menu on kde 
 - use python macro
 
-* Tue Jan 10 2006 G�tz Waschk <waschk@mandriva.org> 0.1.1-7mdk
+* Tue Jan 10 2006 Götz Waschk <waschk@mandriva.org> 0.1.1-7mdk
 - fix buildrequires
 
-* Mon Jan 02 2006 G�tz Waschk <waschk@mandriva.org> 0.1.1-6mdk
+* Mon Jan 02 2006 Götz Waschk <waschk@mandriva.org> 0.1.1-6mdk
 - fix build
 
-* Sat Dec 31 2005 G�tz Waschk <waschk@mandriva.org> 0.1.1-5mdk
+* Sat Dec 31 2005 Götz Waschk <waschk@mandriva.org> 0.1.1-5mdk
 - depend on the jpeg plugin for the smoke codec
 
-* Fri Sep 30 2005 G�tz Waschk <waschk@mandriva.org> 0.1.1-4mdk
+* Fri Sep 30 2005 Götz Waschk <waschk@mandriva.org> 0.1.1-4mdk
 - fix buildrequires
 
-* Wed Sep 14 2005 Nicolas L�cureuil <neoclust@mandriva.org> 0.1.1-3mdk
+* Wed Sep 14 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.1.1-3mdk
 - Fix BuildRequires ( ImageMagick because of convert )
 
 * Tue Jul 05 2005 Michael Scherer <misc@mandriva.org> 0.1.1-2mdk
