@@ -3,7 +3,7 @@
 %endif
 %define    name istanbul
 %define    version 0.2.2
-%define release  10
+%define release  11
 %define    summary  Desktop Session Recorder
 
 Summary:   %summary
