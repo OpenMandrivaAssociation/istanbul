@@ -12,7 +12,7 @@ Version:   %version
 Release:   %release
 License:   GPL
 Group:     Video
-URL:       http://live.gnome.org/Istanbul 
+URL:       https://live.gnome.org/Istanbul 
 Source:    http://zaheer.merali.org/istanbul-%{version}.tar.bz2
 Patch: istanbul-fix-recording-with-sound.patch
 Requires:  pygtk2.0 pygtk2.0-libglade
